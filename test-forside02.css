@@ -1,0 +1,237 @@
+/*=====================================
+HOVED-CONTAINER
+=======================================*/
+#container{
+	position: relative;
+	background-color: purple;
+	width: 1500px;
+	min-width: 1500px;
+	height: 950px;
+	margin: auto;
+}
+
+
+/*==================================================
+HEADER
+==================================================== */
+#headBar{
+	position: absolute;
+	background-color: purple;
+	width: 1500px;
+	height: 60px;
+	font-size: 20px;
+	font-color: black;
+	color: white
+}
+
+#vulkanHeader{
+	position: relative;
+	left: 20px;
+	top: -25px;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+
+/*===========================================
+BILDECONTAINER 
+=============================================*/
+#bildeContainer{
+	position: relative;
+	background-color: purple;
+	width: 1500px;
+	height: 600px;
+	top: 60px;
+}
+
+.bilder{
+	width: 500px;
+	height: 300px;
+	background-color: purple;
+	position: relative;
+}
+
+.bildeInfo{
+	position: relative;
+	width: 300px;
+	height: 90px;
+	transition: all 0.5s ease-in 0s;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	background-color: red;
+	opacity: 0.6;
+}
+
+
+/*Bilde1*/
+#bilde1Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde1 img:hover ~ #bilde1Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde1Info{
+	left: 80px;
+	top: -290px;
+}
+/*_____________*/
+
+/*Bilde2*/
+#bilde2Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde2{
+	left: 500px;
+	top: -300px;
+}
+
+#bilde2 img:hover ~ #bilde2Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde2Info{
+	left: 110px;
+	top: -300px;
+}
+/*_____________*/
+
+/*Bilde3*/
+#bilde3Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde3{
+	left: 1000px;
+	top: -600px;
+}
+
+#bilde3 img:hover ~ #bilde3Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde3Info{
+	left: 100px;
+	top: -300px;
+}
+/*_____________*/
+
+/*Bilde4*/
+#bilde4Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde4{
+	top: -600px;
+}
+
+#bilde4 img:hover ~ #bilde4Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde4Info{
+	left: 100px;
+	top: -300px;
+}
+/*____________*/
+
+/*Bilde5*/
+#bilde5Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde5{
+	top: -900px;
+	left: 500px;
+}
+
+#bilde5 img:hover ~ #bilde5Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde5Info{
+	left: 110px;
+	top: -300px;
+}
+/*___________*/
+
+/*Bilde6*/
+#bilde6Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde6{
+	top: -1200px;
+	left: 1000px;
+}
+
+#bilde6 img:hover ~ #bilde6Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde6Info{
+	left: 100px;
+	top: -300px;
+}
+/*_____________*/
+
+
+/*=====================
+BOTTOM
+=======================*/
+#bottom{
+	position: relative;
+	background-color: purple;
+	top: 41px;
+	width: 1500px;
+	height: 200px;
+}
+
+#textInfo{
+	position: relative;
+	background-color: purple;
+	left: 500px;
+	width: 500px;
+	height: 200px;
+}
+
+.textInfoP{
+	font-size: 19px;
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 0.8;
+}
+
+#bottomInfo{
+	position: relative;
+	background-color: purple;
+	top: 22px;
+	width: 1490px;
+	height: 90px;
+	margin: 10px;
+}
+
+.bottomP{
+	font-size: 15px;
+	font-family: sans-serif;
+	color: white;
+	left: 10px;
+	line-height: 0.4;
+}
+
