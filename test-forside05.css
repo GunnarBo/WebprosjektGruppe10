@@ -1,0 +1,187 @@
+/*=====================================
+BODY
+======================================*/
+body{ 
+	background-color: #26253a;
+}
+
+
+/*=====================================
+HOVED-CONTAINER
+=======================================*/
+#container{
+	position: relative;
+	background-color: #26253a;
+	width: 1200px;
+	min-width: 1200px;
+	height: 900px;
+	margin: auto;
+}
+
+
+/*==================================================
+HEADER
+==================================================== */
+#headBar{
+	position: absolute;
+	background-color: #26253a;
+	width: 1200px;
+	height: 60px;
+	font-size: 20px;
+	font-color: black;
+	color: white
+}
+
+#vulkanHeader{
+	position: relative;
+	left: 20px;
+	top: 15px;
+	width: 70px;
+	height: 70px;
+	background-color: red;
+}
+
+#vulkanHeader img{
+	width: 60px;
+	height: 60px;
+	position: static;
+	
+}
+
+
+/*===========================================
+BILDECONTAINER 
+=============================================*/
+#bildeContainer{
+	position: relative;
+	background-color: blue;
+	width: 1200px;
+	height: 520px;
+	top: 100px;
+}
+
+.bilder{
+	width: 400px;
+	height: 480px;
+	background-color: #26253a;
+	position: relative;
+}
+
+.bildeInfo{
+	position: relative;
+	width: 220px;
+	height: 80px;
+	transition: all 0.5s ease-in 0s;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	border-color: red;
+	opacity: 0.6;
+}
+
+
+/*Bilde1*/
+#bilde1Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde1 img:hover ~ #bilde1Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde1Info{
+	left: 80px;
+	top: -230px;
+}
+/*_____________*/
+
+/*Bilde2*/
+#bilde2Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde2{
+	left: 400px;
+	top: -480px;
+}
+
+#bilde2 img:hover ~ #bilde2Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde2Info{
+	left: 110px;
+	top: -230px;
+}
+/*_____________*/
+
+/*Bilde3*/
+#bilde3Info:hover{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde3{
+	left: 800px;
+	top: -960px;
+}
+
+#bilde3 img:hover ~ #bilde3Info{
+	opacity: 1;
+	z-index: 100;
+}
+
+#bilde3Info{
+	left: 100px;
+	top: -230px;
+}
+/*_____________*/
+
+/*=====================
+BOTTOM
+=======================*/
+#bottom{
+	position: relative;
+	background-color: #26253a;
+	top: 41px;
+	width: 1200px;
+	height: 150px;
+}
+
+#textInfo{
+	position: relative;
+	background-color: #26253a;
+	left: 350px;
+	width: 500px;
+	height: 150px;
+}
+
+.textInfoP{
+	font-size: 19px;
+	font-family: sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 0.8;
+}
+
+#bottomInfo{
+	position: relative;
+	background-color: #26253a;
+	left: 2%;
+	top: 80px;
+	width: 1100px;
+	height: 80px;
+	margin: 10px;
+}
+
+.bottomP{
+	font-size: 15px;
+	font-family: sans-serif;
+	color: white;
+	line-height: 0.4;
+}
+
