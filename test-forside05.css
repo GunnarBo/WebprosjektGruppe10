@@ -12,8 +12,8 @@ HOVED-CONTAINER
 #container{
 	position: relative;
 	background-color: #26253a;
-	width: 1200px;
-	min-width: 1200px;
+	width: 1000px;
+	min-width: 800px;
 	height: 900px;
 	margin: auto;
 }
@@ -25,7 +25,7 @@ HEADER
 #headBar{
 	position: absolute;
 	background-color: #26253a;
-	width: 1200px;
+	width: 1000px;
 	height: 60px;
 	font-size: 20px;
 	font-color: black;
@@ -55,13 +55,13 @@ BILDECONTAINER
 #bildeContainer{
 	position: relative;
 	background-color: blue;
-	width: 1200px;
+	width: 1000px;
 	height: 520px;
 	top: 100px;
 }
 
 .bilder{
-	width: 400px;
+	width: 333px;
 	height: 480px;
 	background-color: #26253a;
 	position: relative;
