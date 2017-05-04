@@ -1,0 +1,286 @@
+/*
+LES DENNE FOR Å SKJØNNE HVA FLEXBOX GJØR:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+/* IMPORTERE FONTS FRA GOOGLE */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/*  BASISINNSTILLINGER */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #3a3955;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER, FLEXBOX ETC. */
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #26253a;
+  padding: 10px;
+  height: 60px;
+  color: #00467f;
+}
+
+header .logo {
+    background-image: url('sti til logo her');
+    background-size: contain;
+    width: 277px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+header .icons {
+  margin-left: auto;
+  height: 100%;
+}
+
+figure {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    color: white;
+    font: 25px 'Roboto Condensed', sans-serif;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+}
+
+/* DETTE ER DET SAMME SOM BODY */
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    transition: margin-left .2s;
+}
+
+/* DETTE ER SELVE BOKSENE PÅ FORSIDEN */
+.contentbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Aktiverer flexbox */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; /* Avgjør hvilken retning boksene skal legge seg */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; /* Avgjør hvor innholdet i flexboxen skal ligge */
+  width: 25%; /* Høyde på hver enkelt boks */
+  min-height: 25%; /* Bredde på hver enkelt boks */
+}
+
+.contentbox:after { /* Pseudo'en gjør at boksene er 100% firkantede uansett oppløsning */
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.conversion-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* Aktiverer flexbox */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; /* Avgjør hvilken retning boksene skal legge seg */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 25%;
+  width: 100%;
+  background-color: #3c3a5b;
+
+}
+
+/* Fargeinnstillinger */
+
+.light-purple { /* Hvis flexboxen ikke har noe bakgrunnsbilde */
+  background-color: #3a3955;
+  color: white;
+  font: 25px 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+/* LINKER */
+a.choose {
+  font: 25px 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+a.choose:hover {
+  background-color: #000;
+  opacity: 0.6;
+  height: 100%;
+  width: 100%;
+  line-height: 100%;
+}
+
+/* BILDER TIL FORSIDEN */
+
+.hamburger {
+  background: url('img/burger.jpg') no-repeat;
+  background-size: cover;
+}
+
+.italiensk {
+  background: url('img/italiensk.jpg') no-repeat;
+  background-size: cover;
+}
+
+.vegan {
+  background: url('img/vegan.jpg') no-repeat;
+  background-size: cover;
+}
+
+.fisk {
+  background: url('img/fisk.jpg') no-repeat;
+  background-size: cover;
+}
+
+.fastfood {
+  background: url('img/fastfood.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* LOGGINN: STIL TIL FEILMELDINGER */
+
+.success {
+	display: block;
+  margin: 10px auto;
+	width: 75%;
+	padding: 5px 7px 5px 6px;
+	margin: 10px auto;
+	border: 1px solid #354235;
+	background: #252E24;
+	box-shadow: 1px 1px 1px #000;
+	color: #efefef;
+
+  font: 11px 'Roboto Condensed', sans-serif;
+	font-size: 11px;
+	text-shadow: 1px 1px 0 #000;
+
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.fail {
+	display: block;
+  margin: 10px auto;
+	width: 75%;
+	padding: 5px 7px 5px 6px;
+	border: 1px solid #423535;
+	background: #2D2323;
+	box-shadow: 1px 1px 1px #000;
+	color: #fff;
+	text-shadow: 1px 1px 0 #000;
+
+  font: 11px 'Roboto Condensed', sans-serif;
+	font-size: 11px;
+
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.info {
+  display: block;
+  margin: 10px auto;
+	width: 75%;
+	padding: 5px 7px 5px 6px;
+	border: 1px solid #4d6677;
+	background: #445761;
+	box-shadow: 1px 1px 1px #000;
+	color: #fff;
+	text-shadow: 1px 1px 0 #000;
+
+  font: 11px 'Roboto Condensed', sans-serif;
+
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* NAVIGERINGSMENYEN SOM POPPER FREM */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #3a3955; /* Samme farge som blokkene*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font: 25px 'Roboto Condensed', sans-serif;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
