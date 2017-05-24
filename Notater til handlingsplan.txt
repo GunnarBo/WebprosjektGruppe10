@@ -1,0 +1,27 @@
+Forslag til struktur. Kan tilpasses ved behov.
+
+
+<Innholdsfortegnelse>
+
+<Innledning>
+
+<Idé og konsept>
+
+<Utviklingsmetodikk>
+
+<Prototype>
+
+<Målgruppen, Usability, designprinsipper, universell utforming etc.>
+
+<Bruk av Git>
+
+<Tekniske valg>
+
+<Referanser>
+
+
+Lengde: Ca 3.000-5.000 ord
+
+vi har valgt å ikke ha bilder som er over 1.5 megabyte for at siden 
+skal være lett å laste.
+
