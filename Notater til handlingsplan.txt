@@ -15,6 +15,8 @@ Forslag til struktur. Kan tilpasses ved behov.
 
 <Bruk av Git>
 
+<database>
+
 <Tekniske valg>
 
 <Referanser>
