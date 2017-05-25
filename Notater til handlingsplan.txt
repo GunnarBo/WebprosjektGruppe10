@@ -25,3 +25,7 @@ Lengde: Ca 3.000-5.000 ord
 vi har valgt å ikke ha bilder som er over 1.5 megabyte for at siden 
 skal være lett å laste.
 
+Målgruppen vi valgte å rette oss mot var yngre studenter unge voksne, 
+som kan gå inn på vår side og bestille bord på et av restaurantene på 
+vulkan.  
+
