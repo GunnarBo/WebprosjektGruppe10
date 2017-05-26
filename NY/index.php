@@ -1,72 +1,117 @@
-<?
-	session_start();
-	ob_start();
+<?php
+  session_start();
+  $page = $_GET['page'];
+  $background = "homebg";
+  switch($page) {
+    case ('asia'):
+      $path = 'partials/asia.php';
+      $currentPage = 'asia';
+      $background = 'asiabg';
+    break;
+
+    case ('tapas'):
+      $path = 'partials/tapas.php';
+      $currentPage = 'tapas';
+      $background = 'tapasbg';
+    break;
+
+    case ('latin'):
+      $path = 'partials/latin.php';
+      $currentPage = 'latin';
+      $background = 'latinbg';
+    break;
+
+    case ('street'):
+      $path = 'partials/street.php';
+      $currentPage = 'street';
+      $background = 'streetbg';
+    break;
+
+    case ('italiensk'):
+      $path = 'partials/italiensk.php';
+      $currentPage = 'italiensk';
+    break;
+
+    case ('barer'):
+      $currentPage = 'barer';
+    break;
+
+    case ('reservation'):
+      $path = 'partials/reservation.php';
+      $currentPage = 'Booking';
+    break;
+
+    case ('reservasjoner'):
+      $path = 'partials/reservasjoner.php';
+      $currentPage = 'Reservasjoner';
+    break;
+
+    case ('login'):
+      $path = 'partials/login.php';
+      $currentPage = 'Logg inn';
+    break;
+
+    case ('logout'):
+      $_SESSION["user_id"] = "";
+      $url1=$_SERVER['REQUEST_URI'];
+      echo "<script>location='/'</script>";
+      session_destroy();
+    break;
+
+    case ('resturanter'):
+      $path = 'partials/resturanter.php';
+      $currentPage = 'resturanter';
+    break;
+
+    case ('barer'):
+      $path = 'partials/barer.php';
+      $currentPage = 'barer';
+    break;
+
+    case ('omoss'):
+      $path = 'partials/omoss.php';
+      $currentPage = 'om oss';
+    break;
+
+    default:
+      $path = 'partials/frontPage.php';
+      $currentPage = 'Hjem';
+      $background = "homebg";
+    break;
+  }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="nb-no" class="<?= $background; ?>">
 <head>
-  <title>Vulkan mat</title> 
-  <link rel="stylesheet" href="style.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+  <title>Mat | <?= $currentPage; ?></title>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="assets/css/login.css" type="text/css" />
+  <link rel="stylesheet" media="(max-width: 800px)" href="assets/css/mobile.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script type="text/javaScript" />
-		/* Åpne hovedmenyen */
-			function openNav() {
-	    		document.getElementById("mySidenav").style.width = "100%";
-			}
-
-		/* Lukke hovedmenmyen */
-			function closeNav() {
-	    		document.getElementById("mySidenav").style.width = "0";
-			}
-	</script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body>
-<?
-	include_once ('config.php');
-	include_once ('func.php');
-?>
-  <header class="">
-    <figure class="logo">
-    </figure>
-    <aside class="icons">
-      <span onclick="openNav()"><i class="fa fa-bars w3-large"></i></span>
-    </aside>
-  </header>
 
-	<section id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">Hjem</a>
-	  <a href="#">Serveringssteder</a>
-	  <a href="#">Kart</a>
-	  <a href="#">Kontakt</a>
-	</section>
+<div class="wrapper">
+  <?php include('static/header.php'); ?>
+  <div id="currentPage">
+    <?= $currentPage; ?>
+  </div>
+  <?php include($path); ?>
+</div>
 
-<main>
-<?
-	$side   = htmlentities(stripslashes($_GET['side'])); // henter frem side-visning
-    $mappe  = "include/"; // mappene filene ligger i
-    $deffil = "meny"; // hovedsiden du kommer til
-    $ext    = ".php"; // filnavn
+<footer>
+  <div class="container">
+    <p>Meld deg på vårt nyhetsbrev</p>
+    <form>
+      <input type="email" id="email" name="email" placeholder="Epost Adresse">
+      <input type="submit" id="submitnewsletter" name="Meld på" value="Meld på">
+      <div class="message"></div>
+    </form>
+  </div>
+</footer>
 
-    if(empty($side)){ // hvis index.php?side er tom, sender deg til deffil
-		include_once("$mappe$deffil$ext");
-    } elseif(preg_match('/^[a-z\d]+\z/i', $side) && file_exists("$mappe$side$ext")){ // hvis siden stemmer med bestemmelsene
-      	include_once("$mappe$side$ext");
-    } elseif(!preg_match('/^[a-z\d]+\z/i', $side)){ // og hvis ikke filnavn er ikke gyldig
-        echo '<section class="info">Siden '.$side.' er et ugyldig filnavn!</section>';
-    } else { // eller siden finnes ikke i include mappen
-        echo '<section class="info">Siden '.$side.' ble ikke funnet.</section>';
-    }
-?>
-
-<section class="conversion-block">
-	NYHETSBRE GÅR HER
-</section>
-
-</main>
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>
 </html>
