@@ -67,7 +67,7 @@ eller spise på stedet, maten får du på noen knappe minutter!</p>
       <h1 class="resturant">Døgnvill</h1><br />
         <p>Hos Døgnvill Bar & Burger blir man servert fantastiske burgere til en all right penge, samt godt øl og gode viner. Alt dette i et avslappet og behagelig miljø med hyggelige mennesker.</p>
         <p>Kjøttet er fra Prima Jæren, kvernet hos Albert Idsøe, ferskt brød fra lokalt bakeri og masse snacks-tilbehør. Sausene og tilbehøret lager de selv. Fra scratch, hver dag.</p>
-        <a href="#" class="btn">Bestill bord</a>
+        <a href="?page=reservation" class="btn">Bestill bord</a>
     </div>
   </div>
 
@@ -78,7 +78,7 @@ eller spise på stedet, maten får du på noen knappe minutter!</p>
       <h1 class="resturant">Lucky Bird</h1><br />
         <p>På Lucky Bird er vår filosofi enkel: god mat, godt øl og fantastiske cocktails til en hyggelig pris.</p>
         <p>Vi serverer det vi liker å kalle amerikansk mat med en Southern touch: Kylling og spareribs med masse tradisjonelt tilbehør som blant annet mac n’cheese, bakte bønner og maisstuing. Og desserter som pecan og key lime pie. Alt laget av de beste råvarene og med generøse porsjoner.</p>
-        <a href="#" class="btn">Bestill bord</a>
+        <a href="?page=reservation" class="btn">Bestill bord</a>
     </div>
   </div>
 
@@ -129,6 +129,19 @@ eller spise på stedet, maten får du på noen knappe minutter!</p>
   </div>
 
   <div class="resturantWrap">
+    <div class="resturantImg risorante">
+    </div>
+    <div class="resturantCont">
+      <h1 class="resturant">Ristorante Ferro</h1>
+        <p>Ristorante Ferro er som Italia. Hvor måltidet alt. Det er der familien samles, venner møtes og kjærlighet oppstår.
+        Vår kjærlighet erklæres til hele Italia. Vi har derfor plukket ut våre favorittråvarer – de enkle rene smakene,
+        og våre beste minner fra reiser, den gode italienske stemningen. Alt smir vi sammen for å gi deg en god opplevelse.
+        Hos oss kan du komme for en helaften, eller en rask pizza. Vi gleder oss til å servere deg!</p>
+        <a href="?page=reservation" class="btn">Bestill bord</a>
+    </div>
+  </div>
+
+  <div class="resturantWrap">
     <div class="resturantImg taco">
     </div>
     <div class="resturantCont">
@@ -136,19 +149,6 @@ eller spise på stedet, maten får du på noen knappe minutter!</p>
         <p>Ideen til Tacos El Brujo er å bringe «street-food» til Oslo- akkurat som vi kjenner det fra Asia, Latin-Amerika og andre vakre steder som finnes i denne verden.</p>
         <p>Tacos El brujo er bygget på «sann lykke»: en autentisk atmosfære, folk som vet å smile, og mat for sjelen.</p>
         <button onclick="alertPopup()" class="btn disabled">Bestill bord</button>
-    </div>
-  </div>
-
-  <div class="resturantWrap">
-    <div class="resturantImg risorante">
-    </div>
-    <div class="resturantCont">
-      <h1 class="resturant">Ristorante Ferro</h1><br />
-        <p>Ristorante Ferro er som Italia. Hvor måltidet alt. Det er der familien samles, venner møtes og kjærlighet oppstår.
-        Vår kjærlighet erklæres til hele Italia. Vi har derfor plukket ut våre favorittråvarer – de enkle rene smakene,
-        og våre beste minner fra reiser, den gode italienske stemningen. Alt smir vi sammen for å gi deg en god opplevelse.
-        Hos oss kan du komme for en helaften, eller en rask pizza. Vi gleder oss til å servere deg!</p>
-        <button onclick="alertPopup()" class="btn">Bestill bord</button>
     </div>
   </div>
 

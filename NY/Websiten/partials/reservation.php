@@ -1,17 +1,17 @@
-<?php // silence is golden ;) ?>
-<?php include_once("lib/db.php"); ?>
+<?php 
+// silence is golden ;)
+include_once("lib/db.php");
 
 
-<?php
 
-include("credentials.php");
+include('credentials.php');
 
 $message = "";
 $class = "";
 
 try {
     // => Connect to the database
-    if (!$link = mysqli_connect($credentials['host'], $credentials['username'], $credentials['password'], $credentials['db_name'])) {
+    if (!$link = mysqli_connect($credentials['hostname'], $credentials['username'], $credentials['password'], $credentials['db_name'])) {
         echo 'Could not connect to mysql';
         exit;
     }
@@ -44,7 +44,7 @@ try {
             // => Success!
             $message = "Takk for din bestilling. Du blir sendt til hovedsiden om 10 sekunder!";
             $class = "success";
-            echo "<script>setTimeout(function() { location='/' },10000);</script>";
+            echo "<script>setTimeout(function() { location='index.php' },10000);</script>";
         }
     }
 

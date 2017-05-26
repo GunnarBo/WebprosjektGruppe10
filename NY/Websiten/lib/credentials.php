@@ -10,4 +10,3 @@ $credentials = array(
     'db_name'   => 'norjor16_vulkan'
 );
 
-?>

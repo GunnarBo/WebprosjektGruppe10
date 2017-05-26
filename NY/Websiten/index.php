@@ -54,7 +54,7 @@
     case ('logout'):
       $_SESSION["user_id"] = "";
       $url1=$_SERVER['REQUEST_URI'];
-      echo "<script>location='/'</script>";
+      echo "<script>location='index.php'</script>";
       session_destroy();
     break;
 
@@ -89,7 +89,9 @@
   <link rel="stylesheet" media="(max-width: 800px)" href="assets/css/mobile.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <div class="wrapper">
   <?php include('static/header.php'); ?>

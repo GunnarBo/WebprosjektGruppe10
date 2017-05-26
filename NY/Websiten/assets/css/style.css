@@ -3,7 +3,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Abel', sans-serif;
+  font-family: 'roboto', sans-serif;
 }
 
 html, body {
@@ -50,7 +50,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Abel', sans-serif;
+  font-family: 'roboto', sans-serif;
 }
 
 .wrapper {
@@ -82,7 +82,7 @@ header .nav {
 }
 
 .nav {
-  background: rgba(39, 37, 59, 0.6);
+  background: rgba(35, 33, 57, 1);
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,13 +104,15 @@ header .nav {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: -25px;
   position: absolute;
-  background: rgba(39, 37, 59, 1);
+  background: rgba(35, 33, 57, 1);
   width: 105px;
   height: auto;
   top: 80px;
   padding: 30px;
   display: none;
+
 }
 
 .subMenu li {
@@ -156,8 +158,9 @@ header .nav {
 
 a.main {
   display: inline-block;
-  font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-family: 'josefin sans', sans-serif ;
+  font-weight: 400;
+  font-size: 17px;
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -176,18 +179,16 @@ a.main:after {
 
 a.main:hover:after {
   width: 100%;
-  background-color: #27253b;
+  background-color: #ffffff;
 }
 
 @media (max-width: 1485px) {
-  a.main {
-    font-size: 14px;
-  }
+  .nav { width: 100%; }
 }
 
 @media (max-width: 1024px) {
   a.main {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -237,7 +238,7 @@ a.category {
   text-transform: uppercase;
   background-color: #27253b;
   color: white;
-  font-family: 'Abel', sans-serif;
+  font-family: 'josefin sans', sans-serif;
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
@@ -266,7 +267,7 @@ a.category:hover {
   background-color: #27253b;
   box-shadow: -3px 3px 30px 0 #000;
   z-index: 50;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .resturantImg {
@@ -279,7 +280,7 @@ a.category:hover {
 .resturantCont {
   margin: 10px;
   color: white;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   z-index: 50;
 }
@@ -375,7 +376,7 @@ a.category:hover {
 
 h1.resturant {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'josefin sans', sans-serif;
   font-size: 20px;
   display: inline;
   text-transform: uppercase;
@@ -385,19 +386,16 @@ h1.resturant {
 .btn {
   position: relative;
   display: block;
-  width: 70%;
+  width: 100%;
   background: -webkit-linear-gradient(left,#0ba666,#0b9886);
   background: linear-gradient(90deg,#0ba666,#0b9886);
-
   padding: 10px 30px 10px 30px;
   border: 0;
-  border-radius: 27px;
   text-align: center;
   line-height: 24px;
   box-sizing: border-box;
-
   color: #fff;
-  font-family: 'Abel', sans-serif;
+  font-family: 'arial', sans-serif;
   font-size: 15px;
   text-decoration: none;
   z-index: 50;
@@ -498,6 +496,7 @@ input {
   font-size: 18px;
   color: #FFF;
   padding: 20px;
+  width: 100%
   font-style: italic;
   text-transform: uppercase;
   position: relative;
